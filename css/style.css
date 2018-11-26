@@ -1,0 +1,382 @@
+/* ----------------------------- 
+    Table of Contents
+
+    1. Basic Setup
+    2. Resuable Components
+        a. Typography
+        b. Colors
+        c. Images
+        d. Buttons, Links, and Icons
+        e. Layout
+    3. Navigation
+    4. Footer
+    5. Home
+        a. Hero
+        b. Why Vibrant
+        c. Promo
+        d. About Us
+    6. Cleanse
+        a. Cleanse
+        b. Cleanse Basics
+        c. Cleanse Details
+    7. Order
+    8. Abous Us
+    9. Locations
+----------------------------- */
+
+/* ----------------------------- */
+/* Basic Setup */
+/* ----------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+html, 
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    color: #333333;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* ----------------------------- */
+/* Reusable Elements */
+/* ----------------------------- */
+
+/* ----- Typography ----- */
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.txt-center {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* ------ Colors ----- */
+
+.bg-dark {
+    padding: 50px;
+    background: #1bc1c1;
+    color: #ffffff;
+}
+
+.bg-light {
+    background: #f2eeed;
+}
+
+/* ------ Images ----- */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.img-cir-lrg {
+    border-radius: 50%;
+    width: 250px;
+    margin-right: 40px;
+}
+
+.img-cir-sml {
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+}
+
+.juice-thumbnail {
+    height: 200px;
+    width: auto;
+    margin: 0 auto 40px;
+}
+
+/* ----- Buttons, Links, and Icons ----- */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4543f;
+    transition: 0.2s; 
+}
+
+.btn {
+    background: #f4543f;
+    height: 40px;
+    padding: 0 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ed3c25;
+    transition: 0.2s;
+}
+
+i {
+    font-size: 2rem;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #f4543f;
+}
+
+i:hover {
+    color: #ed3c25;
+    transition: 0.2s;
+}
+
+/* ----- Layout ----- */
+
+.bg-padding {
+    padding: 50px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-txt-padding {
+    padding: 0 0 0 40px;  
+}
+
+.container {
+    margin: 80px 50px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.location {
+    padding-bottom: 40px;
+}
+
+.location:last-child {
+    padding-bottom: 0;
+}
+
+
+/* ----------------------------- */
+/* Navigation */
+/* ----------------------------- */
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-link {
+    color: #333333;
+}
+
+.navbar_toggle {
+    display: none;
+}
+
+.navbar_toggle i {
+    color: #333333;
+}
+
+.logo {
+    width: 75px;
+}
+
+/* ----------------------------- */
+/* Footer */
+/* ----------------------------- */
+
+footer {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 100px 150px 2fr 1fr 1fr;
+    grid-gap: 40px; 
+}
+
+footer i {
+    font-size: 2rem;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.footer-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2rem;
+}
+
+input {
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 5px;
+}
+
+#footer-txt {
+    padding-bottom: 10px;
+}
+
+
+/* ----------------------------- */
+/* Home */
+/* ----------------------------- */
+
+/* ----- Hero -----*/
+
+header {
+    background: url(images/fresh_juice.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+}
+
+.hero {
+    width: 40%;
+    padding: 150px 50px;
+}
+
+/* ----- Why Vibrant ----- */
+
+.grid-4 {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+}
+
+/* ----- Promos ----- */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 100px;
+    text-align: left;
+}
+
+/* ----- About Us ----- */
+
+
+#span-color {
+    color: #f4543f;
+}
+
+
+/* ----------------------------- */
+/* Cleanse */
+/* ----------------------------- */
+
+/* ----- Cleanses ----- */
+
+.card {
+    text-align: center;
+    display: table;
+    height: 480px;
+}
+
+.row {
+    display: table-row-group;
+    vertical-align: bottom;
+}
+
+.row button {
+    margin: 0;
+}
+
+/* ----- Cleanse Basics ----- */
+
+#bg-img {
+    background: #f2eeed url(images/cleanse_basics.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+/* ----- Cleanse Details ----- */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 80px;
+}
+
+/* ----------------------------- */
+/* Order */
+/* ----------------------------- */
+
+.juice-card {
+    text-align: center;
+    display: table;
+    height: 400px;
+}
+
+/* ----------------------------- */
+/* Locations */
+/* ----------------------------- */
+
+
+
+
+

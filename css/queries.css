@@ -1,0 +1,153 @@
+/* ----------------------------- 
+    Table of Contents
+
+    1. Basic Setup
+    2. Resuable Components
+        a. Typography
+        b. Colors
+        c. Images
+        d. Buttons and Links
+        e. Layout
+    3. Navigation
+    4. Footer
+    5. Home
+        a. Hero
+        b. Why Vibrant
+        c. Promo
+        d. About Us
+    6. Cleanse
+        a. Cleanse
+        b. Cleanse Basics
+        c. Cleanse Details
+    7. Order
+        a. Greens
+        b. Roots
+        c. ?
+    8. Abous Us
+    9. Locations
+----------------------------- */
+
+@media only screen and (max-width: 768px) {
+    /* ----------------------------- */
+    /* Resusable Components */
+    /* ----------------------------- */
+    
+    /* ----- Images -----*/
+    
+    .img-cir-lrg {
+        margin: 0 auto 40px;
+    }
+
+    /* ----- Layout -----*/
+
+    .col-2 {
+        width: 100%;
+    }
+    
+     .col-txt-padding {
+        padding: 40px 0 0;  
+    }
+
+    .flex-center {
+        display: block;
+    }
+    
+    
+    /* ----------------------------- */
+    /* Navigation */
+    /* ----------------------------- */
+    
+    .navbar {
+        display: block;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 0;
+    }
+    
+    .mobile-navbar {
+        padding: 20px;
+    }
+    
+    .logo {
+        float: left;
+    }
+    
+    .nav {
+        display: none;
+        background: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        height: auto;
+        width: 100%;
+    }
+    
+    .nav li {
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    
+    .navbar_toggle {
+        display: block;
+        float: right;
+        margin-top: 1.5rem;
+        cursor: pointer;
+        color: #202124;
+        font-size: 1.5rem;
+    }
+
+    /* ----------------------------- */
+    /* Footer */
+    /* ----------------------------- */
+
+    footer {
+        grid-template-columns: auto;
+    }
+
+    input {
+        margin: 10px 0 0;
+    }
+
+
+    /* ----------------------------- */
+    /* Home */
+    /* ----------------------------- */
+
+    /* ----- Hero -----*/
+
+    .hero {
+        width: 100%;
+        padding: 50px;
+    }
+
+    /* ----- Promo -----*/
+
+    .img-cir {
+        margin: 0 auto 40px;
+    }
+
+    .grid-2 {
+        text-align: center;
+    }
+    
+    /* ----------------------------- */
+    /* Cleanse */
+    /* ----------------------------- */
+    
+    /* ----- Cleanse -----*/
+    .card {
+        height: auto;
+    }
+    
+    .row button {
+        margin-top: 40px;
+    }
+    
+    /* ----- Cleanse Basics -----*/
+    
+    #bg-img {
+        height: auto;
+    }
+
+    
+}
+
