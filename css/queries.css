@@ -27,6 +27,48 @@
     9. Locations
 ----------------------------- */
 
+@media only screen and (max-width: 1024px) {
+    
+    /* ----------------------------- */
+    /* Reusable Componants */
+    /* ----------------------------- */
+    
+    /* ----- Layout -----*/
+    
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* ----------------------------- */
+    /* Footer */
+    /* ----------------------------- */
+
+    footer {
+        grid-template-columns: auto;
+    }
+    
+    /* ----------------------------- */
+    /* Home */
+    /* ----------------------------- */
+    
+    /* ----- Hero -----*/
+
+    .hero {
+        padding: 50px;
+    }
+    
+    /* ----- Promo -----*/
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+        text-align: left;
+    }
+}
+
+
+
 @media only screen and (max-width: 768px) {
     /* ----------------------------- */
     /* Resusable Components */
@@ -39,6 +81,10 @@
     }
 
     /* ----- Layout -----*/
+    
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
 
     .col-2 {
         width: 100%;
@@ -148,6 +194,9 @@
         height: auto;
     }
 
-    
 }
+
+
+
+
 
